@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solar Energy World | Leading Residential Solar Provider</title>
+
+<link href="https://livechat4dynamicsstorage.blob.core.windows.net/livechat4dynamicsstoragecontainer/static/css/main.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --sew-navy:#002d5b;
+    --sew-gold:#ffc629;
+    --sew-light:#f8f9fa;
+    --text-gray:#555;
+}
+
+/* ================= GLOBAL ================= */
+html,body{
+    margin:0;
+    font-family:'Open Sans',sans-serif;
+    overflow-x:hidden;
+    color:#333;
+}
+
+/* ================= HEADER ================= */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 5%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo img{height:55px}
+
+nav a{
+    text-decoration:none;
+    color:var(--sew-navy);
+    font-weight:700;
+    margin-left:25px;
+    text-transform:uppercase;
+    font-size:13px;
+}
+
+.btn-estimate{
+    background:var(--sew-gold);
+    padding:10px 20px;
+    border-radius:4px;
+}
+
+/* ================= HERO VIDEO ================= */
+.block--hero{
+    position:relative;
+    min-height:500px;
+    overflow:hidden;
+}
+
+.block--hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    /* background:rgba(0,45,91,.65); */
+    z-index:2;
+}
+
+.hero-inner{
+    position:relative;
+    z-index:3;
+    color:#fff;
+    text-align:center;
+}
+
+.video-wrapper{
+    position:absolute;
+    inset:0;
+    z-index:1;
+}
+
+.video-wrapper video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* ================= GRAVITY FORM ================= */
+.gform_wrapper{
+    max-width:600px;
+    margin:30px auto 0;
+}
+
+.gform_wrapper input,
+.gform_wrapper button{
+    width:100%;
+}
+
+/* ================= STATIC HERO ================= */
+.hero{
+    background:linear-gradient(rgba(0,45,91,.8),rgba(0,45,91,.8)),
+    url('https://www.solarenergyworld.com/wp-content/uploads/2021/04/residential-solar-panels.jpg');
+    background-size:cover;
+    background-position:center;
+    color:#fff;
+    padding:100px 5%;
+    text-align:center;
+}
+
+.hero h1{
+    font-family:'Montserrat',sans-serif;
+    font-size:3.5rem;
+}
+
+/* ================= STATS ================= */
+.milestones{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    padding:50px 10%;
+    background:var(--sew-light);
+    text-align:center;
+}
+
+.stat-box h2{
+    color:var(--sew-navy);
+    font-size:2.5rem;
+}
+
+/* ================= SERVICES ================= */
+.services{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.service-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.service-card{
+    border:1px solid #ddd;
+    padding:30px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.service-card:hover{
+    border-color:var(--sew-gold);
+    box-shadow:0 10px 30px rgba(0,0,0,.05);
+}
+
+/* ================= FOOTER ================= */
+footer{
+    background:#111;
+    color:#fff;
+    padding:40px;
+    text-align:center;
+    font-size:14px;
+}
+
+/* ================= CHAT ================= */
+#root{
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:9999;
+}
+
+/* ================= MOBILE ================= */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        gap:10px;
+    }
+    nav a{
+        margin:8px;
+        display:inline-block;
+    }
+    .hero h1{font-size:2.2rem}
+    .wp-block-columns{
+        flex-direction:column!important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="https://www.solarenergyworld.com/wp-content/uploads/svg/Logo.svg" alt="Solar Energy World Logo">
+    </div>
+    <nav>
+        <a href="#">Products</a>
+        <a href="#">Pricing</a>
+        <a href="#">How Solar Works</a>
+        <a href="#" class="btn-estimate">Free Solar Estimate</a>
+    </nav>
+</header>
+
+<!-- 🔴 YOUR WORDPRESS HERO + FORM (UNCHANGED) -->
+<section class="block block--hero">
+    <div class="hero-inner">
+        <h1>Leading Residential Solar Provider</h1>
+        <h2>Take Control of Your Energy Bill</h2>
+        <!-- Gravity Form stays exactly as-is -->
+    </div>
+    <div class="video-wrapper">
+        <video autoplay muted loop playsinline>
+            <source src="https://www.solarenergyworld.com/wp-content/uploads/2025/01/Hero-Video.mp4" type="video/mp4">
+        </video>
+    </div>
+</section>
+
+<!-- <section class="hero">
+    <h1>Your World, Powered by the Sun</h1>
+    <p>Join over 20,000 homeowners who switched to clean energy.</p>
+    <a href="#" class="btn-estimate" style="color:var(--sew-navy);text-decoration:none;">Get Started Today</a>
+</section> -->
+
+<section class="milestones">
+    <div class="stat-box"><h2>20k+</h2><p>Solar Panels Installed</p></div>
+    <div class="stat-box"><h2>15+</h2><p>Years in Business</p></div>
+    <div class="stat-box"><h2>#1</h2><p>In the Nation</p></div>
+    <div class="stat-box"><h2>5-Star</h2><p>Customer Reviews</p></div>
+</section>
+
+<section class="services">
+    <h2>Our Residential Solutions</h2>
+    <div class="service-grid">
+        <div class="service-card"><h3>Solar Panels</h3><p>High-efficiency panels.</p></div>
+        <div class="service-card"><h3>Solar Batteries</h3><p>Backup power & savings.</p></div>
+        <div class="service-card"><h3>System Monitoring</h3><p>24/7 tracking.</p></div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Solar Energy World. All Rights Reserved.</p>
+</footer>
+
+<div id="root"></div>
+<script src="https://livechat4dynamicsstorage.blob.core.windows.net/livechat4dynamicsstoragecontainer/static/js/bundle.js"></script>
+
+</body>
+</html>
